@@ -91,4 +91,15 @@ public class Project {
     public int hashCode() {
         return Objects.hashCode(code);
     }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id=" + id +
+                ", code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", tasks=" + tasks +
+                '}';
+    }
 }
