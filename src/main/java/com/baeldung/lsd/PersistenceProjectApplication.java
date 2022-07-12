@@ -36,6 +36,9 @@ public class PersistenceProjectApplication implements ApplicationRunner {
 		Optional<Task> project1 = taskRepository.findById(1L);
 			LOG.info("Task by id 1:\n{}", project1);
 
+		long noOfWorkers = workerRepository.count();
+		LOG.info("Number of workers: {}", noOfWorkers);
+
 		System.out.println("Texas");
 	}
 }
